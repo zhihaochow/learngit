@@ -1,0 +1,199 @@
+@keyframes icon-bounce{
+	0%,100%{
+		transform:rotate(0deg);
+	}
+
+	25%{
+		transform:rotate(15deg);
+	}
+
+	50%{
+		transform:rotate(-15deg);
+	}
+
+	75%{
+		transform:rotate(5deg);
+	}
+
+	85%{
+		transform:rotate(-5deg);
+	}
+}
+
+#section1 p img{
+	max-width:200px;
+	width:40%;
+	height:auto;
+}
+#section2{
+	background-image:url(bc91507211d15849d7cbb5e69484d4fd.jpeg);
+	background-attachment:fixed;
+	z-index:-2;
+}
+
+.center{
+	text-align:center;
+}
+
+.fade{
+	opacity:0;
+	transform:translateY(2em);
+	transition:all 1s 0.2s;
+}
+
+.fadeIn{
+	opacity:1;
+	transform:translateY(0);
+}
+
+.my-intro{
+	max-width:850px;
+	margin:0 auto 50px;
+}
+
+.my-intro p{
+	padding:2em 0 0;
+	text-indent:2em;
+}
+
+.radius{
+	border-radius:50%;
+	width:200px;
+	height:200px;
+}
+
+a{
+	text-decoration:none;
+	color:#fff;
+}
+
+a:hover{
+	color:#E87E04;
+	text-decoration:none;
+}
+
+a img{
+	width:40px;
+	height:40px;
+}
+
+a:hover img{
+	animation:icon-bounce 0.5s alternate;
+}
+
+.nav{
+	width:100%;
+	background-color:#2c3e50;
+	height:70px;
+	position:relative;
+}
+
+.fix{
+	position:fixed;
+	top:0px;
+	left:0px;
+		z-index:100;
+}
+
+.active a{	
+	color:#E87E04;
+}
+
+.relative{
+	position:relative;
+
+}
+
+.date-box p{
+	text-align:center;
+}
+
+.banner{
+	position:relative;
+
+}
+
+.lunboimg{
+	position:relative;
+	width:50%;
+	margin:auto;
+}
+
+.banner .lunboimg img:nth-child(1){
+	position:absolute;
+	transform:scale(1);
+	opacity:0;
+	transition:all 1s;
+}
+
+.banner .lunboimg img:nth-child(2){
+	position:absolute;
+	transform:scale(1);
+	opacity:0;
+	transition:all 1s;
+}
+
+.banner .lunboimg img:nth-child(3){
+	position:absolute;
+	opacity:0;
+	transform:scale(1);
+	transition:all 1s;
+}
+
+.banner .lunboimg img:nth-child(4){
+	opacity:0;
+	transform:scale(1);
+	transition:all 1s;
+}
+
+.banner .lunboimg img.enlarge{
+	transform:scale(1.1);
+}
+
+.banner .lunboimg img.appear{
+	opacity:1;
+}
+
+.banner ul{
+	position:absolute;	
+	bottom:5px;
+	left:50%;
+	margin:0;
+	margin-left:-40px;
+}
+
+
+.banner ul li.on{
+	background:rgba(0,0,0,.7);
+}
+
+.banner ul li{
+	background:rgba(34,34,34,.5);
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	float:left;
+	margin:5px;
+	cursor:pointer;
+}
+
+
+.banner .lunbo-btn{
+	position:absolute;
+	width:60%;
+	top:50%;
+	left:50%;
+	margin-left:-332.4px;
+	margin-top:5px;
+}
+
+.banner .lunbo-btn img.lunbo-btn-lt{
+	float:left;
+}
+
+.banner .lunbo-btn img.lunbo-btn-rt{
+	float:right;
+	transform:rotate(180deg);
+
+
+}
